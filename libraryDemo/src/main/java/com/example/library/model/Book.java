@@ -5,7 +5,7 @@ public class Book { //adamsha class
 	
 	private Long _id;
 	private String _title;
-	private boolean _available;
+	private boolean _available = true;
 	
 	
 	public Book() {}
