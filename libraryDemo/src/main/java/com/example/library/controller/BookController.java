@@ -44,13 +44,14 @@ public class BookController { //http to method calls tranlation
 	@GetMapping("/{id}")
 	public Book get(@PathVariable Long id)
 	{
-		return  service.getBook(id);
+		return service.getBook(id);
 	}
 	
 	 @ExceptionHandler(NotFoundException.class)
-	    public ResponseEntity<String> handleNotFound(NotFoundException e) {
-	        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
-	    }
+	 public ResponseEntity<String> handleNotFound(NotFoundException e)
+	 {
+		 return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+	 }
 	
 
 }

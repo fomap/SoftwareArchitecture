@@ -5,6 +5,7 @@ public class Book { //adamsha class
 	
 	private Long _id;
 	private String _title;
+	private boolean _available;
 	
 	
 	public Book() {}
@@ -14,5 +15,8 @@ public class Book { //adamsha class
 	
 	public String getTitle() { return _title;}
 	public void setTitle(String title) { this._title = title; }
+	
+	public boolean getAvailable() { return _available;}
+	public void setAvailable(boolean bool) {this._available = bool;}
 	
 }
